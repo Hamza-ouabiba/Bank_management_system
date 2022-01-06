@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1641135419 source:d:\projects\emsi_project_final\resources.rc
+
+1641134410 source:d:\projects\emsi_project_final\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<time.h>
+	<string.h>
+	<ctype.h>
+

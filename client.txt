@@ -1,0 +1,5 @@
+12	dzq	dz	qd	1/212/12
+2	dzq	z	dzq	12/12/12
+3	dz	dzq	dzq	12/12/12
+2	dzq	dzq	zqd	1/212/12
+21	dzq	zqd	qzd	12/12/12
