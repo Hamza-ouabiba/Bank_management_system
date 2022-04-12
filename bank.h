@@ -76,8 +76,8 @@
 	///inserer les infos Les client dans File_client:
 	void FILE_CLIENT(FILE *File_Client,client *clt ,int taille){
 	       int i=taille;
-			      fprintf(File_Client,"%d\t",(clt+i)->cin);
-	              fprintf(File_Client,"%s\t",(clt+i)->nom);
+			  fprintf(File_Client,"%d\t",(clt+i)->cin);
+	               	  fprintf(File_Client,"%s\t",(clt+i)->nom);
 		          fprintf(File_Client,"%s\t",(clt+i)->prenom);
 		          fprintf(File_Client,"%s\t",(clt+i)->ville);
 		          fprintf(File_Client,"%d/%d/%d\n",(clt+i)->naissance.jour,(clt+i)->naissance.mois,(clt+i)->naissance.anne);
@@ -89,9 +89,9 @@
 	             printf("Donner le cin : ");
 	             scanf("%d",&(user+i)->cin);
 	         } while(rechercheClient(user,*taille,(user+i)->cin) != -1);
-	         printf("Nom : ");
+	             printf("Nom : ");
 		     fflush(stdin);
-	         gets((user+i)->nom);
+	             gets((user+i)->nom);
 		     printf("Prenom :");
 		     fflush(stdin);
 		     gets((user+i)->prenom);
@@ -100,13 +100,11 @@
 		     gets((user+i)->ville);
 		     printf("Date de naissance : Jour : ");
 		     scanf("%d",&(user+i)->naissance.jour);
-	         printf("Date de naissance : Mois : ");
+	             printf("Date de naissance : Mois : ");
 		     scanf("%d",&(user+i)->naissance.mois);
 		     printf("Date de naissance : Annee : ");
 		     scanf("%d",&(user+i)->naissance.anne);
-
-			 FILE_CLIENT(client,user,*taille);
-
+		     FILE_CLIENT(client,user,*taille);
 	         (*taille)++;
 	}
 	//afficher tous les clients :
@@ -155,7 +153,7 @@
 				do{
 					numero_co=rand();
 					//cherhcher si le numero deja existe dans le tableau des comptes bancaires
-				}while(numero_co<9999 && chercherCompte(b,*taille,numero_co)!=-1 );
+				}while(numero_co<9999 || chercherCompte(b,*taille,numero_co)!=-1 );
 	     time(&maintenant);
 	     //cherhcher si le numero deja existe dans le tableau des comptes bancaires  :
 	     //tester :
