@@ -5,12 +5,12 @@
 #include<string.h>
 #include<ctype.h>
 #include"bank.h"
-int main()
+   int main()
 	{
 		    int cfc = 0;//compter les informations du fichier client :
 		    int cfcom = 0;//compter les informations du fichier compte :
-			int c = 0;//compter le nombre de caractere dans le mot de passe :
-			int cin_co;//pour que le client lorsqu'il se connecte a son compte on recupere son cin :
+		    int c = 0;//compter le nombre de caractere dans le mot de passe :
+		    int cin_co;//pour que le client lorsqu'il se connecte a son compte on recupere son cin :
 		    int taille = 0;//la taille du tableau du client :
 		    int taille2=0;//la taille du tableau du compte :
 		    int numero_co2;//le numero de compte du deuxieme compte bancaire (Virement)
