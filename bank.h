@@ -116,17 +116,17 @@
 
 	    if(taille>0) {
 	    	for(i=0;i<taille;i++) {
-	         printf("\n---------------------------\n");
-	         printf("cin : %d :\n",(u+i)->cin);
-	         printf("Nom : %s \n",(u+i)->nom);
-	         printf("Prenom : %s\n",(u+i)->prenom);
-	         printf("Ville : %s\n",(u+i)->ville);
-	         printf("Date de naissance : %d/%d/%d\n",(u+i)->naissance.jour,(u+i)->naissance.mois,(u+i)->naissance.anne);
-	         if((u+i)->compte == 1) {
-	             printf("Ce client dispose deja d'un compte Bancaire : \n");
-	         } else {
-	              printf("le client ne dispose pas d'un compte Bancaire : \n");
-	          }
+			 printf("\n---------------------------\n");
+			 printf("cin : %d :\n",(u+i)->cin);
+			 printf("Nom : %s \n",(u+i)->nom);
+			 printf("Prenom : %s\n",(u+i)->prenom);
+			 printf("Ville : %s\n",(u+i)->ville);
+			 printf("Date de naissance : %d/%d/%d\n",(u+i)->naissance.jour,(u+i)->naissance.mois,(u+i)->naissance.anne);
+			 if((u+i)->compte == 1) {
+			     printf("Ce client dispose deja d'un compte Bancaire : \n");
+			 } else {
+			      printf("le client ne dispose pas d'un compte Bancaire : \n");
+			  }
 	    }
 	    printf("\n");
 		} else {
@@ -174,16 +174,14 @@
 
 		 	   //faire la mise a jour du solde actuelle :
 		 	   (b+i)->derniere_operation = 'd';
-                strcpy((b+i)->now,ctime(&maintenant));
+                	   strcpy((b+i)->now,ctime(&maintenant));
 		 	   //enregistrer la date actuelle :
 		 	   do {
 		 	   	     printf("Donner un mot de passe pour ce compte Bancaire : (12 CHAR Max ! )");
 		 	   	     fflush(stdin);
 		 	   	     gets((b+i)->mt_de_passe);
 				} while(strlen((b+i)->mt_de_passe) > 13);
-
 				FileCompte(b,*taille,compte);
-
 		 	   (*taille)++;
 		 	   printf("Creation Compte avec succes.......\n");
 		 	   getch();
