@@ -4,7 +4,7 @@
 #include<time.h>
 #include<string.h>
 #include<ctype.h>
-#include"bank.h"
+#include"bank.c"
 int main()
 {
     int cfc = 0;//compter les informations du fichier client :
